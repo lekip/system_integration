@@ -13,8 +13,21 @@ namespace W08_WcfService
     public interface IService1
     {
 
+        
         [OperationContract]
-        string GetData(int value);
+        [WebInvoke(
+            Method ="GET",
+            ResponseFormat = WebMessageFormat.Json,            
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            UriTemplate ="PutPerson/{person}")]
+        void PutPerson(string person);
+
+        [OperationContract]
+        [WebInvoke(
+            Method = "GET",
+            ResponseFormat = WebMessageFormat.Json,            
+            UriTemplate = "GetPerson")]
+        string GetPerson();
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
