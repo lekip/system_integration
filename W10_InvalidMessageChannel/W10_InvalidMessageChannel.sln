@@ -5,6 +5,14 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W10_InvalidMessageChannel", "W10_InvalidMessageChannel\W10_InvalidMessageChannel.csproj", "{40A0EE99-D1CD-4200-8EFD-11588FEED7E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelSender", "ChannelSender\ChannelSender.csproj", "{AA886908-40F4-446F-A982-2A90A447D795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelReceiver", "ChannelReceiver\ChannelReceiver.csproj", "{71762E74-556C-4400-9DEA-F3A3BFFCB60F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelMonitor", "ChannelMonitor\ChannelMonitor.csproj", "{E765B751-0CC2-4925-99F8-97F384F701D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{CA00D16E-13E1-40EF-A717-357A43EC9947}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{40A0EE99-D1CD-4200-8EFD-11588FEED7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40A0EE99-D1CD-4200-8EFD-11588FEED7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40A0EE99-D1CD-4200-8EFD-11588FEED7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA886908-40F4-446F-A982-2A90A447D795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA886908-40F4-446F-A982-2A90A447D795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA886908-40F4-446F-A982-2A90A447D795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA886908-40F4-446F-A982-2A90A447D795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71762E74-556C-4400-9DEA-F3A3BFFCB60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71762E74-556C-4400-9DEA-F3A3BFFCB60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71762E74-556C-4400-9DEA-F3A3BFFCB60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71762E74-556C-4400-9DEA-F3A3BFFCB60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E765B751-0CC2-4925-99F8-97F384F701D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E765B751-0CC2-4925-99F8-97F384F701D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E765B751-0CC2-4925-99F8-97F384F701D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E765B751-0CC2-4925-99F8-97F384F701D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA00D16E-13E1-40EF-A717-357A43EC9947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA00D16E-13E1-40EF-A717-357A43EC9947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA00D16E-13E1-40EF-A717-357A43EC9947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA00D16E-13E1-40EF-A717-357A43EC9947}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
