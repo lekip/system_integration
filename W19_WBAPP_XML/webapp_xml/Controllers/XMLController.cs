@@ -17,7 +17,7 @@ namespace webapp_xml.Controllers
             XmlReaderSettings settings = new XmlReaderSettings();
             settings.ValidationType = ValidationType.Schema;
             XmlDocument document = new XmlDocument();
-            document.LoadXml("CD_LIST.xml");
+            document.LoadXml("CD_LIST.xml"); //Vigtigt!
             document.Validate(settings);
                                 
 
