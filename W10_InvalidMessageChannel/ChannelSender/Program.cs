@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommonClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Messaging;
@@ -20,7 +21,10 @@ namespace ChannelSender
                 if (s != "exit")
                 {
                     MessageQueue messageQueue = new MessageQueue(@".\Private$\w10_MessageChannel");
-                    messageQueue.Send(s, "Title");
+
+                    WebArticle webarticle = new WebArticle();
+                    webarticle.title = s;
+                    messageQueue.Send(webarticle, "Title");
                 }            
             }            
         }

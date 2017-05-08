@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommonClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Messaging;
@@ -26,19 +27,19 @@ namespace ChannelReceiver
             while (true)
             {
                 System.Messaging.Message m = messageQueue.Receive();
-                m.Formatter = new System.Messaging.XmlMessageFormatter(new Type[1] { typeof(string) });
+                m.Formatter = new System.Messaging.XmlMessageFormatter(new Type[1] { typeof(WebArticle) });
 
-                String output = (String)m.Body;
+                WebArticle webArticle = (WebArticle) m.Body;
 
-                if (output.Contains('2'))
+                if (webArticle.title.Contains('2'))
                 {
                     Console.WriteLine("Ugyldig besked modtaget");
                     MessageQueue invalidMessageQueue = new MessageQueue(@".\Private$\w10_InvalidMessageChannel");
-                    invalidMessageQueue.Send(output, "Title");
+                    invalidMessageQueue.Send(webArticle, "Title");
                 }
                 else
                 {
-                    Console.WriteLine("Modtaget: " + output);
+                    Console.WriteLine("Modtaget: " + webArticle.ToString());
                 }
             }
         }

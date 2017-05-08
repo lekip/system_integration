@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+    <ProjectReference Include="..\ClassLibrary1\CommonClassLibrary.csproj">
       <Project>{CA00D16E-13E1-40EF-A717-357A43EC9947}</Project>
-      <Name>ClassLibrary1</Name>
+      <Name>CommonClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

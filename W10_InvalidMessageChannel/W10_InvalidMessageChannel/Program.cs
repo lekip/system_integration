@@ -1,4 +1,4 @@
-﻿using ClassLibrary1;
+﻿using CommonClassLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,11 +36,11 @@ namespace W10_InvalidMessageChannel
 
                     // Create the Queue
                     MessageQueue mc = MessageQueue.Create(@".\Private$\w10_MessageChannel");
-                    mc.Formatter = new XmlMessageFormatter(new Type[] { typeof(ChannelObject) });
+                    mc.Formatter = new XmlMessageFormatter(new Type[] { typeof(WebArticle) });
 
                     // Create the Queue
                     MessageQueue imc = MessageQueue.Create(@".\Private$\w10_InvalidMessageChannel");
-                    imc.Formatter = new XmlMessageFormatter(new Type[] { typeof(ChannelObject) });
+                    imc.Formatter = new XmlMessageFormatter(new Type[] { typeof(WebArticle) });
 
                     Console.WriteLine("Channels created");
                     Console.ReadKey();

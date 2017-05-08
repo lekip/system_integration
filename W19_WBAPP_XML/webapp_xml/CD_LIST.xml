@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DB>
+  <CD>
+    <Title>
+        Load
+    </Title>
+    <Price>
+       140
+    </Price>
+    <Author>
+      Metalica
+    </Author>
+  </CD>
+  <CD>
+    <Title>
+      Master of puppets
+    </Title>
+    <Price>
+      110
+    </Price>
+    <Author>
+      Metalica
+    </Author>
+  </CD>
+</DB>

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace ConsoleApplicationRequest
 {
-    public class ChannelObject
+    class Program
     {
-        DateTime dt = new DateTime();
-        String text = "";
+        static void Main(string[] args)
+        {
+        }
     }
 }

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelReceiver", "ChannelR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelMonitor", "ChannelMonitor\ChannelMonitor.csproj", "{E765B751-0CC2-4925-99F8-97F384F701D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{CA00D16E-13E1-40EF-A717-357A43EC9947}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonClassLibrary", "ClassLibrary1\CommonClassLibrary.csproj", "{CA00D16E-13E1-40EF-A717-357A43EC9947}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
